@@ -1,0 +1,232 @@
+{
+    "candidate":  "team_agent_hybrid_receiver_overflow_v17",
+    "status":  "experimental_not_score_validated",
+    "source_commit":  "5e7aa26e27d73d3159365e566ed75eb50f5e56c4",
+    "working_tree_was_clean":  true,
+    "sources":  {
+                    "receiver_overflow":  "team_agent_receiver_overflow_v15",
+                    "receiver_overflow_module_identical_to_v16":  true,
+                    "hybrid":  "team_agent_hybrid_v16"
+                },
+    "change":  "Enable NeedPlanner-derived priority only; keep the heuristic pipeline, receiver-overflow safeguard, allocation_enabled=false, and residual_allocation_enabled=false.",
+    "changed_policy_keys":  [
+                                "need_priority_enabled"
+                            ],
+    "tree_hash_method":  "SHA256 of UTF-8 concatenated rows in sorted relative-path order, with slash-normalized paths: \u003crelative_path\u003e\u003cTAB\u003e\u003cfile_sha256\u003e\u003cLF\u003e",
+    "parents":  {
+                    "v16_tree_sha256":  "dafe6a77620c876981915c14b27d0876ae1a79ccbf00f4c639f826b7b140e525",
+                    "v15_tree_sha256":  "7b197ec3a2406fb09e499785c7ed2f10d4acbc8f89bb10312793eeb54ccd8d4a"
+                },
+    "candidate_tree_sha256":  "b2c9ac7fa123887da7396a276a2dac43db05943531544f4643eb2865a84b2894",
+    "candidate_file_count":  37,
+    "candidate_files":  [
+                            {
+                                "path":  "agent.py",
+                                "sha256":  "7098f8d555f6bcf509b97711e74bda6821763f84a490def5148a9b1bf6e3e4da",
+                                "bytes":  15877
+                            },
+                            {
+                                "path":  "allocation.py",
+                                "sha256":  "a778484b19dc9ed01355fbd3aa8c026ac060c4a2a12e6934104efdb89755262e",
+                                "bytes":  24685
+                            },
+                            {
+                                "path":  "closed_route_dispatch.py",
+                                "sha256":  "c5b6334693229471a0b285a7e18c71a69b2d7a3174dc5ceeaced486f520fb29e",
+                                "bytes":  1788
+                            },
+                            {
+                                "path":  "contracts.py",
+                                "sha256":  "bd186267cf66b608303764213e623691aefa5f014a25311c1e2f699e31018b7e",
+                                "bytes":  6382
+                            },
+                            {
+                                "path":  "delivery.py",
+                                "sha256":  "1db653ff6946f12bd48bf416e2086200d77ef61745e9e77542300a56d9c2aff3",
+                                "bytes":  8526
+                            },
+                            {
+                                "path":  "delivery_eta.py",
+                                "sha256":  "a3a4739d390c216c943e0a6fae286f727783b2e4be42f3f4773e6d1136d927ed",
+                                "bytes":  5132
+                            },
+                            {
+                                "path":  "dispatch.py",
+                                "sha256":  "c625ef23b6f3e9fbf525c216a6b97910cfa7c81e12e5a5626e8dd2cba9958f65",
+                                "bytes":  10423
+                            },
+                            {
+                                "path":  "dispatch_priority.py",
+                                "sha256":  "41bcb6bd547e4bf4e2cd75b16c1650ba1c092f70dbd8ffd516bfba06782c3943",
+                                "bytes":  4593
+                            },
+                            {
+                                "path":  "experiments/presets.json",
+                                "sha256":  "4aa7c91e27805fade5a782ea480997f6f37b55afea93f391d037bd027ff6b444",
+                                "bytes":  1026
+                            },
+                            {
+                                "path":  "fuel_batch.py",
+                                "sha256":  "a566b3434475ca232fe48c35589c4919fae8bd11da0690fdf97c377681086cd8",
+                                "bytes":  10885
+                            },
+                            {
+                                "path":  "fuel_lookahead.py",
+                                "sha256":  "1fc18f710a719c4fa0007078330487b4a691425a88945a8b68fccf77a86a869c",
+                                "bytes":  13627
+                            },
+                            {
+                                "path":  "fuel_mpc.py",
+                                "sha256":  "c4478fc33f73eafc646364b8d9afc8b95acc2d619847f31beab0302d7f0d4e4d",
+                                "bytes":  15070
+                            },
+                            {
+                                "path":  "fuel_release.py",
+                                "sha256":  "395a556b4bccdb76f445281deec06067646ce025240f857a2ad9babcb8e7a649",
+                                "bytes":  21129
+                            },
+                            {
+                                "path":  "hybrid.py",
+                                "sha256":  "5d74679b6c1367f412d58aa1d904cde0925f3a1bf7ca511ac930e5a65382ca71",
+                                "bytes":  23694
+                            },
+                            {
+                                "path":  "integration.py",
+                                "sha256":  "35280aa06f884cef95564e34aef5d4a9f057874102389cf850d382da89fa578f",
+                                "bytes":  12790
+                            },
+                            {
+                                "path":  "inventory_control.py",
+                                "sha256":  "f55a5b971afce0442fa41f83f5667d530365cbe97a23538c68d3a35c1e63676c",
+                                "bytes":  4818
+                            },
+                            {
+                                "path":  "needs.py",
+                                "sha256":  "9c6fa85d9cc0aa01b9ecc6068a0a6cd077ac91b8fa40e6030c5a37f0d9871876",
+                                "bytes":  53368
+                            },
+                            {
+                                "path":  "network.py",
+                                "sha256":  "5785e2686c1d0951594ee914d21806d2984a339783c937d12deecc65c8ff60fd",
+                                "bytes":  18720
+                            },
+                            {
+                                "path":  "observations.py",
+                                "sha256":  "96f40b98efdb3cbabc133934b65e45b5eee1979a535935cfeee850c39442a6ab",
+                                "bytes":  2465
+                            },
+                            {
+                                "path":  "params.json",
+                                "sha256":  "58cdd9dcb133efc8d1d561033832df48d841beb0ec69271511731a8b0f1637a3",
+                                "bytes":  1589
+                            },
+                            {
+                                "path":  "production_horizon.py",
+                                "sha256":  "1497c1eaa12b612e3456e2977ce9aae662c20a5bbc54c88f21896caa9aa6031d",
+                                "bytes":  3452
+                            },
+                            {
+                                "path":  "production_recovery.py",
+                                "sha256":  "e901ebd3ac3ea3d1f3b5becf6e743947a9f12397a04865f2529a877e2ec9decf",
+                                "bytes":  9059
+                            },
+                            {
+                                "path":  "production_tail.py",
+                                "sha256":  "6e13adea769e820321da832f4df41a1ddcbfb7a29704fd5340377c88ccaa5882",
+                                "bytes":  5518
+                            },
+                            {
+                                "path":  "production_value.py",
+                                "sha256":  "1995fe080a69796c406f66fa26353eb9572cefeb211753a4fbe4e9e298d6e37f",
+                                "bytes":  6911
+                            },
+                            {
+                                "path":  "queue_delay.py",
+                                "sha256":  "638b03c23239abe15ec8758a680e7196fd3d485c39f079b8b1ed72bded63e2ea",
+                                "bytes":  7628
+                            },
+                            {
+                                "path":  "queue_forecast.py",
+                                "sha256":  "137a430628eb04864c2054dd7e2ac90d4893507a120ed3ea9597f397d719554c",
+                                "bytes":  20712
+                            },
+                            {
+                                "path":  "queue_outedge.py",
+                                "sha256":  "d9dfcae2b0321da72000da089ef92a88ce7c568816743021edf3320aa9bf1d50",
+                                "bytes":  5047
+                            },
+                            {
+                                "path":  "raw_utility.py",
+                                "sha256":  "ef5ca6d776656058ffd8cc5c710de5e5f9ad9b8b905b24c86f7cf25769c8ba72",
+                                "bytes":  8556
+                            },
+                            {
+                                "path":  "raw_utility_model.json",
+                                "sha256":  "43e4db72cd41fe30ae2d2305e8aed34ac708eb3f48ac34d61833e6a087cf5317",
+                                "bytes":  1150
+                            },
+                            {
+                                "path":  "rebalance.py",
+                                "sha256":  "a3dc670753a479cd0e31c8fccdbe8a383ba21a00b4979d64ffbbba4badd1585c",
+                                "bytes":  29044
+                            },
+                            {
+                                "path":  "receiver_overflow.py",
+                                "sha256":  "06405e73375c759df1ca8bf153d92875bd89af7637de5ec294a21e5c0af7470e",
+                                "bytes":  6014
+                            },
+                            {
+                                "path":  "risk.py",
+                                "sha256":  "62f1a28db0b5b740b4c178b2740b4a7df0977893ecb0efb065b4ff4ba2448337",
+                                "bytes":  10930
+                            },
+                            {
+                                "path":  "risk_contracts.py",
+                                "sha256":  "0ba0780202233e86bfcb4842f8a8ea84fa5dc94edf644f4c05e3d516d4dbb7a1",
+                                "bytes":  776
+                            },
+                            {
+                                "path":  "sales_dispatch.py",
+                                "sha256":  "ba93cf475e14a761acc0b9ca6c6ddef5a54ff63c3d3de092adca95c15b0e72c8",
+                                "bytes":  14067
+                            },
+                            {
+                                "path":  "state.py",
+                                "sha256":  "a85bbe36ab05b0301b1a3f7126d6c380f556da0bd509d0b08ec59c4ec3fb7d2f",
+                                "bytes":  11799
+                            },
+                            {
+                                "path":  "warning_forecast.json",
+                                "sha256":  "4d1a2446a6daae80e6834cb1671b5fcc0ad355244c277756709ee3d74730faf0",
+                                "bytes":  2781
+                            },
+                            {
+                                "path":  "warning_forecast.py",
+                                "sha256":  "edc19d29e45b7f8614b21b6d0ca8dc88a21d4adbf9480e6ef29536e28d55b392",
+                                "bytes":  4142
+                            }
+                        ],
+    "evaluation":  {
+                       "requested_score_gate":  "Full RSS \u003e= 0.8 with positive paired difference on an independent 64-episode root, then Small and root-0 confirmation.",
+                       "status":  "not_run",
+                       "reason":  "This environment has no usable Python 3.12/3.13 interpreter or uv/sbf command; package requires Python \u003e=3.12 and \u003c3.14.",
+                       "next_commands":  [
+                                             "uv run sbf compare team_agent_hybrid_receiver_overflow_v17 team_agent_receiver_overflow_v15 --task=full --episodes=64 --entropy=12345 --cpu_budget=True",
+                                             "uv run sbf compare team_agent_hybrid_receiver_overflow_v17 team_agent_receiver_overflow_v15 --task=full --episodes=64 --entropy=67890 --cpu_budget=True",
+                                             "uv run sbf compare team_agent_hybrid_receiver_overflow_v17 team_agent_receiver_overflow_v15 --task=small --episodes=64 --entropy=67890 --cpu_budget=True",
+                                             "uv run sbf compare team_agent_hybrid_receiver_overflow_v17 team_agent_receiver_overflow_v15 --task=full --episodes=dev --entropy=0 --cpu_budget=True",
+                                             "uv run sbf check team_agent_hybrid_receiver_overflow_v17 --task=small",
+                                             "uv run sbf check team_agent_hybrid_receiver_overflow_v17 --task=full",
+                                             "uv run sbf pack team_agent_hybrid_receiver_overflow_v17"
+                                         ]
+                   },
+    "frozen_run_note":  "The older frozen ZIP hashes in docs/TEAM_FROZEN_RUN_2026-10-06.json are unavailable and are not treated as hashes of these current folders.",
+    "working_tree_clean_means":  "Repository was clean at HEAD before the new candidate and manifest were created; current untracked candidate files are expected.",
+    "baseline_score":  "not_measured_in_this_environment",
+    "submission_zip_sha256":  null,
+    "guarded_features":  [
+                             "allocation_enabled remains false",
+                             "residual_allocation_enabled remains false",
+                             "queue ETA and queue forecasting remain disabled"
+                         ]
+}

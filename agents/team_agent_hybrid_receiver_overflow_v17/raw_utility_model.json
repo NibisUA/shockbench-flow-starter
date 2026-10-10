@@ -1,0 +1,53 @@
+{
+  "features": [
+    "input_cover",
+    "other_input_cover",
+    "output_fill",
+    "other_output_fill",
+    "capacity_quote",
+    "near_wip_cover",
+    "export_capacity",
+    "export_net_value",
+    "market_cover",
+    "market_demand",
+    "input_export",
+    "output_export",
+    "remaining_fraction",
+    "export_value_capacity"
+  ],
+  "weights": [
+    0.0001093596586190374,
+    -0.0038350015016826965,
+    -0.25757642737999015,
+    -0.07948283888463333,
+    -2.5589949598849956e-15,
+    0.27086035320412094,
+    -0.030068967053782505,
+    -0.028918871200484628,
+    -0.4703741114154927,
+    -0.03141457674530107,
+    0.00016425407581265776,
+    0.14080565069526782,
+    1.0991307975505762e-16,
+    0.005315063339724701
+  ],
+  "training_entropy": 20261030,
+  "training_episodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "fit": "quantity-weighted ridge marginal cost gradient, no intercept",
+  "ridge": 0.01,
+  "quantity_scale_median": 48901.10799705713,
+  "data_sha256": "1e9e2476a0b49d51053493ed3bc385bd6684c06c91a308e4998968f93a5b9436"
+}
