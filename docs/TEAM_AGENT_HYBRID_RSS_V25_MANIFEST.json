@@ -1,0 +1,85 @@
+﻿{
+    "candidate":  "team_agent_hybrid_rss_v25",
+    "status":  "experimental_not_score_validated",
+    "source_commit":  "a2f76af700486af9844f678bc9485c5a0848e07d",
+    "primary_base":  "team_agent_production_network_v23",
+    "primary_base_git_tree":  "375354c113ca700437274fdc84a30740d0be36e8",
+    "tree_sha256":  "5c46d04d63f2918c2bb16032769c66334e4cd3801f6f0543d1eefc7650b2033b",
+    "file_count":  38,
+    "hash_method":  "SHA256 over UTF-8 rows sorted by relative path: relative/path\u003cTAB\u003efile_sha256\u003cLF\u003e",
+    "changed_files":  [
+                          {
+                              "path":  "agent.py",
+                              "sha256":  "4c4b67216f5c5ca773e32160ba8523115c0ddf10500ec0ccbbf2cec96551579d",
+                              "bytes":  16684
+                          },
+                          {
+                              "path":  "hybrid.py",
+                              "sha256":  "39422f85d8af00d2f959ee2b01363f169d4ac94604223c670bec7ca43f117edd",
+                              "bytes":  31995
+                          },
+                          {
+                              "path":  "inventory_control.py",
+                              "sha256":  "bd93d9425c72c5f0b766948c2692479c4d9dba2635639aa7c7d783679217ca0b",
+                              "bytes":  4875
+                          },
+                          {
+                              "path":  "params.json",
+                              "sha256":  "cd3155af64aa0ca2822706b5fadfd853b9208e3589056ff5bd6386e45a535da5",
+                              "bytes":  2374
+                          },
+                          {
+                              "path":  "production_value.py",
+                              "sha256":  "9097319849488e84c7d5d742356f97b9931ef9c3b4e3d33b731e3130e0aab1a4",
+                              "bytes":  8230
+                          }
+                      ],
+    "merged_sources":  {
+                           "backlog_value":  "team_agent_backlog_value_v22",
+                           "clipping_recovery":  "team_agent_clipping_repair_v19",
+                           "fuel_settings":  [
+                                                 "team_agent_fuel_cover_v20",
+                                                 "team_agent_fuel_industry_v20",
+                                                 "team_agent_fuel_lookahead_v20",
+                                                 "team_agent_fuel_mpc_v20"
+                                             ],
+                           "route_settings":  [
+                                                  "team_agent_route_closure_soft_v24",
+                                                  "team_agent_route_cost_low_v24",
+                                                  "team_agent_route_warning_off_v24"
+                                              ],
+                           "production_settings":  [
+                                                       "team_agent_production_balance_v21",
+                                                       "team_agent_production_congestion_v21",
+                                                       "team_agent_production_cover_v21",
+                                                       "team_agent_production_energy_v21",
+                                                       "team_agent_production_value_v21"
+                                                   ],
+                           "production_network":  "team_agent_production_network_v23"
+                       },
+    "evaluation":  {
+                       "status":  "not_run",
+                       "score":  "unknown",
+                       "compare_to":  "team_agent_production_network_v23",
+                       "protocol":  "TO_DO.md: root 12345, at least 64 Full; root 67890, at least 64 Full and Small; root 0 final confirmation; sbf check Small and Full",
+                       "runtime_blocker":  "uv and sbf are unavailable; python and py resolve only to WindowsApps launchers"
+                   },
+    "selected_parameters":  {
+                                "fuel_industry_bonus":  2,
+                                "balance_production_power":  1,
+                                "route_warning_bias":  0,
+                                "production_recovery_cover":  8,
+                                "production_network_strength":  0.5,
+                                "cost_bias":  1,
+                                "fuel_lookahead_horizon":  4,
+                                "closure_power":  0.5,
+                                "production_output_power":  0,
+                                "production_energy_power":  1,
+                                "release_receiver_cover":  8,
+                                "need_priority_enabled":  true,
+                                "production_value_power":  1,
+                                "clipping_repair_enabled":  true,
+                                "production_backlog_strength":  1,
+                                "fuel_mpc_horizon":  12
+                            }
+}
