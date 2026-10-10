@@ -1,0 +1,37 @@
+{
+  "baseline_conservative": {
+    "production_horizon": 1,
+    "safety_stock": false,
+    "include_estimated_arrivals": false,
+    "production_enabled": false,
+    "shortage_cost_model": false
+  },
+  "forecast_bom": {
+    "production_horizon": 4,
+    "safety_stock": true,
+    "include_estimated_arrivals": false,
+    "production_enabled": true,
+    "shortage_cost_model": false
+  },
+  "forecast_bom_with_estimated_arrivals": {
+    "production_horizon": 4,
+    "safety_stock": true,
+    "include_estimated_arrivals": true,
+    "production_enabled": true,
+    "shortage_cost_model": false
+  },
+  "voll_comparison_disabled": {
+    "production_horizon": 4,
+    "safety_stock": true,
+    "include_estimated_arrivals": false,
+    "production_enabled": true,
+    "shortage_cost_model": false
+  },
+  "voll_comparison_enabled": {
+    "production_horizon": 4,
+    "safety_stock": true,
+    "include_estimated_arrivals": false,
+    "production_enabled": true,
+    "shortage_cost_model": true
+  }
+}

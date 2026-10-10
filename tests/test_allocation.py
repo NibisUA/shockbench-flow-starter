@@ -468,8 +468,11 @@ def test_trace_preserves_actions_resources_reasons_and_forecast_usage(api):
     assert plain.resource_usage == traced.resource_usage and plain.reasons == traced.reasons
     eta = [e for e in events if e["stage"] == "eta"]
     assert eta and all(e["quantity"] > 0 and e["source_stock"] > 0 and e["entry_capacity"] > 0 for e in eta)
-    ranks = [e["need_rank"] for e in events]
-    assert ranks == sorted(ranks)
+    # Assignment ETAs are finalised after the joint plan, so their callbacks
+    # follow candidate/forecast callbacks. Each phase retains need priority.
+    for phase in ({"assignment"}, {e["stage"] for e in events} - {"assignment"}):
+        ranks = [e["need_rank"] for e in events if e["stage"] in phase]
+        assert ranks == sorted(ranks)
 
 
 def test_route_trace_separates_absent_action_slot_from_sanctions(api):

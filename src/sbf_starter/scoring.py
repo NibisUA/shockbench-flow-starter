@@ -90,12 +90,18 @@ def as_dict(result) -> dict:
             "interval": result.interval,
             "p_a_better": result.p_a_better,
         }
-    keys = ("agent", "task", "regime", "rss", "pooled", "rss_all", "interval", "episodes", "fallback_weeks", "quick")
+    keys = (
+        "agent", "task", "regime", "rss", "pooled", "rss_all", "rss_by_stratum", "interval", "episodes",
+        "fallback_weeks", "quick", "excluded", "invalid_entries", "weeks", "cpu_budget_s",
+    )
     out = {k: getattr(result, k) for k in keys}
     out |= {"cost_usd": result.cost_usd, "naive_cost_usd": result.naive_cost_usd}
     out |= {"clairvoyant_cost_usd": result.clairvoyant_cost_usd, "cpu_weeks": result.cpu_weeks}
     out["per_episode"] = [
-        {k: r.get(k) for k in ("episode", "stratum", "J_policy_cents", "J_naive_cents", "J_clairvoyant_cents")}
+        {k: r.get(k) for k in (
+            "episode", "stratum", "J_policy_cents", "J_naive_cents", "J_clairvoyant_cents", "excluded",
+            "fallback_weeks", "cpu_weeks", "invalid_entries", "first_error", "seconds", "omega_hash",
+        )}
         for r in result.rows
     ]
     return out
