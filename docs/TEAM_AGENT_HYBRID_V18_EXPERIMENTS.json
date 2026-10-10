@@ -1,0 +1,70 @@
+﻿{
+    "source_commit":  "78b4b1267cb2983463e6f92796d7a699f1d14722",
+    "baseline_agent":  "team_agent_hybrid_receiver_overflow_v17",
+    "baseline_tree_git_object":  "f566dbab08fc159ffa6abebeca73bc4bc6700b6e",
+    "status":  "experimental_not_score_validated",
+    "hash_method":  "SHA256 over UTF-8 rows sorted by relative path: relative/path\u003cTAB\u003efile_sha256\u003cLF\u003e",
+    "experiments":  [
+                        {
+                            "agent":  "team_agent_hybrid_risk_gate_v18",
+                            "idea":  "risk_gated_policy_portfolio",
+                            "tree_sha256":  "ffe0aa3612417b84e15434f2af9cb466777e18665d640ed385ecebc08309e33e",
+                            "file_count":  38,
+                            "changed_files":  [
+                                                  {
+                                                      "path":  "agent.py",
+                                                      "sha256":  "135d2f5c719fb05726e4ecc4322159151dab801483afd9f5e2e8fe6a48d78ac0"
+                                                  },
+                                                  {
+                                                      "path":  "params.json",
+                                                      "sha256":  "ae107dcf87540e712c69f80ced1ba8e0e0a14c0cd5e5845e21039e2ba7e8485c"
+                                                  },
+                                                  {
+                                                      "path":  "risk_gate.py",
+                                                      "sha256":  "047f192368c1d5e14c8066ac79c3c1238c2a04945731d906aa4a0b1ee5f41f3a"
+                                                  }
+                                              ],
+                            "changed_policy_keys":  [
+                                                        "risk_gate_enabled",
+                                                        "risk_gate_min_closure_fraction",
+                                                        "risk_gate_min_blocked_fraction",
+                                                        "risk_gate_backlog_trigger"
+                                                    ],
+                            "evaluation":  "not_run"
+                        },
+                        {
+                            "agent":  "team_agent_hybrid_shadow_price_v18",
+                            "idea":  "dynamic_resource_shadow_prices",
+                            "tree_sha256":  "38cb95e1b0952f7622ea79d95680c7042f60bbb1de33c2eb5e17b4a9fefdb3bb",
+                            "file_count":  37,
+                            "changed_files":  [
+                                                  {
+                                                      "path":  "agent.py",
+                                                      "sha256":  "d64e1612acae9559702f183908b46ad09b1ba026b5c67f7be6d398c9bcb3cbc4"
+                                                  },
+                                                  {
+                                                      "path":  "hybrid.py",
+                                                      "sha256":  "5fe581db58e526c7454b41f77b43058a40f67272638443417d900cc48ffd4d12"
+                                                  },
+                                                  {
+                                                      "path":  "params.json",
+                                                      "sha256":  "970909adf45db215ba681601005c320804980a6b4cb971b4104a5b54b260f350"
+                                                  }
+                                              ],
+                            "changed_policy_keys":  [
+                                                        "shadow_price_enabled"
+                                                    ],
+                            "evaluation":  "not_run"
+                        }
+                    ],
+    "clipping_aware_repair":  "Already implemented and enabled in v17; reused as baseline, not duplicated.",
+    "runtime_blocker":  "uv and sbf are not installed or discoverable in this environment; python/py resolve only to WindowsApps launchers, so no usable locked Python runtime was available.",
+    "evaluation_protocol":  {
+                                "validation_full_episodes":  64,
+                                "validation_small_episodes":  64,
+                                "search_full_episodes":  64,
+                                "confirmation_root":  0,
+                                "search_root":  12345,
+                                "validation_root":  67890
+                            }
+}
