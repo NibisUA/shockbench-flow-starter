@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "team": "Merge-Conflict",
+  "primary_agent": "team_agent_context_dispatch_final",
+  "source_directory": "agents/team_agent_context_dispatch_final",
+  "zip_path": "submissions/team_agent_context_dispatch_final.zip",
+  "zip_sha256": "7be1c2f5631f8a582c161da48726089735737dc7c7bed9ae6675331c74901e81",
+  "files": 40,
+  "unpacked_bytes": 385648,
+  "codabench": {
+    "rss": 0.7326,
+    "source": "reported_by_team",
+    "verified_via_api": false
+  },
+  "local_evaluations": [
+    {
+      "task": "small",
+      "episodes": 64,
+      "entropy": 20261073,
+      "rss": 0.731703669840265,
+      "rss_interval_90": [
+        0.7055412162989689,
+        0.757897469838746
+      ],
+      "baseline": "v30",
+      "rss_difference": 0.0009950637215782043,
+      "paired_interval_90": [
+        0.0005865258169029719,
+        0.0014551193763571667
+      ],
+      "fallback_weeks": 0,
+      "cpu_weeks": 0,
+      "pooled": true,
+      "quick": false
+    },
+    {
+      "task": "full",
+      "episodes": 40,
+      "entropy": 20261071,
+      "rss": 0.7916347413085483,
+      "rss_interval_90": [
+        0.7644361636254214,
+        0.8167489530185296
+      ],
+      "baseline": "v30",
+      "rss_difference": 0.0,
+      "paired_interval_90": [
+        0.0,
+        0.0
+      ],
+      "costs_exactly_baseline": true,
+      "fallback_weeks": 0,
+      "cpu_weeks": 0,
+      "invalid_override_entries": 3039,
+      "baseline_invalid_override_entries": 3039,
+      "pooled": true,
+      "quick": false
+    }
+  ],
+  "local_checks": {
+    "small": {
+      "passed": true,
+      "max_cpu_s": 0.446,
+      "median_cpu_s": 0.0687
+    },
+    "full": {
+      "passed": true,
+      "max_cpu_s": 0.86,
+      "median_cpu_s": 0.1884
+    },
+    "organizer_hardware_verified": false
+  }
+}

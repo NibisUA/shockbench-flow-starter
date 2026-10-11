@@ -1,4 +1,52 @@
-# ShockBench-Flow starter kit
+# Merge-Conflict: ShockBench-Flow
+
+## Основна фінальна версія
+
+Основний агент команди **Merge-Conflict** — **team_agent_context_dispatch_final**.
+Готовий ZIP і його вихідний код нижче відповідають одній і тій самій перевіреній версії.
+
+- [Завантажити фінальний ZIP](https://github.com/NikitaBil/shockbench-flow-starter/raw/refs/heads/main/submissions/team_agent_context_dispatch_final.zip)
+- [Вихідний код фінального агента](agents/team_agent_context_dispatch_final/)
+- [Метадані версії та перевірок](submissions/FINAL_AGENT.json)
+
+SHA256 ZIP:
+
+```text
+7be1c2f5631f8a582c161da48726089735737dc7c7bed9ae6675331c74901e81
+```
+
+### Результати
+
+**Codabench RSS: 0.7326**, за результатом, повідомленим командою. Ця публікація не виконує нового сабміту на Codabench.
+
+Наведені нижче оцінки отримано локально на самому фінальному ZIP, окремо від результату Codabench:
+
+| Набір | Епізоди | RSS | 90% інтервал RSS | Приріст до v30 |
+| --- | ---: | ---: | --- | ---: |
+| Small, entropy 20261073 | 64 | 0.731704 | [0.705541, 0.757897] | +0.000995 |
+| Full, entropy 20261071 | 40 | 0.791635 | [0.764436, 0.816749] | 0.000000 |
+
+Парний 90% інтервал приросту Small: [0.000587, 0.001455]. На Full всі 40 витрат точно збігаються з v30.
+Локальні перевірки Small і Full пройшли з нульовим fallback; максимальний CPU-час тижня становив 0.446 с і 0.860 с відповідно.
+Ці таймінги отримано на локальній машині, вони не сертифікують швидкість на машині організаторів.
+
+### Як перевірити та запустити
+
+Після `uv sync`:
+
+```bash
+uv run sbf check team_agent_context_dispatch_final --task=small
+uv run sbf check team_agent_context_dispatch_final --task=full
+uv run sbf evaluate team_agent_context_dispatch_final --task=small
+uv run sbf evaluate team_agent_context_dispatch_final --task=full
+```
+
+Агент читає розміри мережі з config. Для Small він використовує облік звільнення складів вихідними відправками з v35; для Full зберігає перевірену поведінку v30.
+Активні механізми включають економічний розподіл запасів, LP продажів, облік затримок і черг, захист від переповнення, паливні партії та узгодження нафти.
+OilPulseAlignment порівнює два варіанти поставки нафти на два тижні за публічними даними.
+Прогноз ризику використовує фіксовані коефіцієнти та історію поточного епізоду. Автоматичне онлайн-навчання на топ-доставках і помилках є напрямом розвитку.
+
+## Документація starter kit
 
 **A Gymnasium control task: keep a supply network running while the map breaks.**
 
