@@ -1,5 +1,12 @@
 # Merge-Conflict: ShockBench-Flow
 
+## My role in Merge-Conflict
+
+I led the **three-person Merge-Conflict team** and was the **primary contributor to the implementation**.
+This repository contains the team's shared work on top of the official
+[MantisAnalytics starter kit](https://github.com/MantisAnalytics/shockbench-flow-starter).
+The original team commits and authorship are preserved in this fork.
+
 ## Основна фінальна версія
 
 Основний агент команди **Merge-Conflict** — **team_agent_context_dispatch_final**.
